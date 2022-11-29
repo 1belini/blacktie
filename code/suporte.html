@@ -1,29 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/style/suporte.css" rel="stylesheet">
-    <title>Document</title>
+    <link href="/blacktie/static/style/suporte.css" rel="stylesheet">
+    <title>Support</title>
 </head>
 <body>
     <header>
         <div class="header">
-            <h1 class="bl">BLACKTIE</h1>
-            <li>
-                <ul><a href="/code/">Suporte</a></ul>
-                <ul><a href="/code/">Conta</a></ul>
-                <ul><a href="/code/">CAP</a></ul>
-                <ul><a href="/code/">NAP</a></ul>
-            </li>
+           <img src="/blacktie/static/icons/gravata.png" alt="icone gravata" class="logo">
+            <ul>
+                <li ><a href="index.html">Suporte</a></li>
+                <li><a href="index.html">Conta</a></li>
+                <li><a href="index.html">CAP</a></li>
+                <li><a href="index.html">NAP</a></li>
+            </ul>
+        </div>
+        <div class="other"> 
+            <img src="/blacktie/static/icons/support.png" alt="ícone suporte" class="suporte">
+            <h1>SUPORTE BLACKTIE</h1>
         </div>
     </header>
     <main>
+        <DIV class="duvidas">
+        <h1>DÚVIDAS FREQUENTES</h1>
+        <img src="/blacktie/static/icons/seta.png" alt="seta para baixo" class="seta">
+
+    </DIV>
+    <div class="questions">
+        <h1 class="pergunta">Como comprar na BlackTie?</h1>
+        <p class="paragrafo">Sua compra pode ser realizada em nosso site oficial <i>blacktie.com</i></p>
+
+        <h1 class="pergunta">Os produtos são originais BlackTie?</h1>
+        <p class="paragrafo">Sim! Nossa linha de produtos são totalmente originais e de ótima qualidade</p>
+
+        <h1 class="pergunta">Qual a proposta da empresa?</h1>
+        <p class="paragrafo">Nossa empresa cuida do meio ambiente! Temos a política da sustentabilidade</p>
+    </div>
+
+    <section class="helpme">
+        <h1 class="ajuda">COMO PODEMOS TE AJUDAR?</h1>
+
+        <form class="form">
+            <div class="nome">
+                SEU NOME:
+                <input type="text" name="nome" value="" required placeholder="Digite Aqui..." class="input">
+
+                SEU E-MAIL:
+                <input type="text" name="email" value="" required placeholder="Digite Aqui..." class="input">
+            </div> 
+            <div class="infos">
+                SELECIONE O PRODUTO:
+                <select name="produtos" id="" class="input">
+                    <option value="cap">CAP</option>
+                    <option value="nap">NAP</option>
+                </select>
+                   <br>
+                   <br>
+                   <br>
+               QUAL O PROBLEMA?
+               <br>
+               <br>
+                <textarea name="problema" id="" cols="80" rows="10" placeholder="Digite Aqui...">
+                
+                </textarea>
+            </div>
+
+            <button class="botao">Enviar</button>
+
+        </form>
+
+
+    </section>
+
 
     </main>
     <footer>
-        
+        <p>BlackTie</p>
     </footer>
 </body>
 </html>
