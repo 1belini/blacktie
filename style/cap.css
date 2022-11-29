@@ -1,36 +1,109 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family= Poppins:ital,wght@1,300 & display = swap');
+* {
     margin: 0;
     padding: 0;
-    background-color: #D6E0F0;
+    box-sizing: border-box;
 }
-.header{
-    background-color: red;
+
+body {
+    font-family: "Poppins", sans-serif;
 }
-.bl{
-    position: relative;
-    display: inline-block;
-    padding-left: 2%;
+
+.container {
+    max-width: 990px;
 }
-ul{
-    position: relative;
-    float: right;
-    right: 300px;
-    bottom: 70px;
+
+.small-image-group {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    gap: 15px;
+    max-width: 120px;
 }
-a{
-    text-decoration: none;
-    color: black;
-    font-size: 22px;
+
+.left-selection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 495px;
+    gap: 25px;
 }
-.pc{
-    position: relative;
-    display: inline-block;
-    padding-top: 2%;
+
+.small-image-group .small-image img {
+    height: 10vh;
+    border: 0.5px solid lightgray;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
 }
-.texto{
-    position: relative;
-    float: right;
-    width: 400px;
-    padding-left: 5%;
-    padding-top: 5%;
+
+.main-image {
+    max-width: 375px;
+}
+
+.main-image img {
+    max-width: 325px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 990px;
+    height: 90vh;
+    gap: 40px;
+}
+
+.right-section .content h6 {
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.content h2 {
+    margin-top: 10px;
+}
+
+.content p {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb (77, 68, 68);
+}
+
+.rating .bx{
+    color: #fe980f;
+}
+
+select, 
+button {
+    display: block;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+button {
+    width: 135px;
+    height: 50px;
+    margin: 20px 0;
+    font-size: 17px;
+    text-align: center;
+    background-color: #fe980f;
+    cursor: pointer;
+}
+
+button .bx {
+    font-size: 17px;
+    padding-right: 5px;
+}
+
+.detail li {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.small-image img:hover {
+    box-shadow: 0 0 6px rgba(240, 46, 46, 0.5);
+}
+
+.content {
+    word-wrap: break-word;
 }
